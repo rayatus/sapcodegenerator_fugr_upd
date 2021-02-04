@@ -35,25 +35,21 @@
       <RSFDO>
        <PARAMETER>IS_DATA</PARAMETER>
        <KIND>P</KIND>
-       <INDEX> 001</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>ID_CHNGIND</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Change Type (U, I, S, D)</STEXT>
-       <INDEX> 002</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>DB_UPDATE_ERROR</PARAMETER>
        <KIND>X</KIND>
        <STEXT>Error during DB Update</STEXT>
-       <INDEX> 003</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>INCORRECT_CHANGE_INDICATOR</PARAMETER>
        <KIND>X</KIND>
        <STEXT>Incorrect change indicator</STEXT>
-       <INDEX> 004</INDEX>
       </RSFDO>
      </DOCUMENTATION>
     </item>
@@ -79,19 +75,16 @@
       <RSFDO>
        <PARAMETER>IT_DATA</PARAMETER>
        <KIND>P</KIND>
-       <INDEX> 001</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>DB_UPDATE_ERROR</PARAMETER>
        <KIND>X</KIND>
        <STEXT>Error during DB Update</STEXT>
-       <INDEX> 002</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>INCORRECT_CHANGE_INDICATOR</PARAMETER>
        <KIND>X</KIND>
        <STEXT>Incorrect change indicator</STEXT>
-       <INDEX> 003</INDEX>
       </RSFDO>
      </DOCUMENTATION>
     </item>

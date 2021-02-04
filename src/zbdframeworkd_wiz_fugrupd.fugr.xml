@@ -28,13 +28,11 @@
       <RSFDO>
        <PARAMETER>CANCELLED_BY_USER</PARAMETER>
        <KIND>X</KIND>
-       <INDEX> 001</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>ERROR</PARAMETER>
        <KIND>X</KIND>
        <STEXT>Error occurred while performing wizard transactions</STEXT>
-       <INDEX> 002</INDEX>
       </RSFDO>
      </DOCUMENTATION>
     </item>
@@ -180,46 +178,31 @@
        <LINE>PROCESS AFTER INPUT.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>MODULE wz_user_command_wizard.</LINE>
+       <LINE>  MODULE wz_user_command_wizard.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>CHAIN.</LINE>
+       <LINE>  CHAIN.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>FIELD gs_codegen_data-devclass.</LINE>
+       <LINE>    FIELD gs_codegen_data-devclass.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>FIELD gs_codegen_data-namespace.</LINE>
+       <LINE>    FIELD gs_codegen_data-namespace.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>FIELD gs_codegen_data-dbname.</LINE>
+       <LINE>    FIELD gs_codegen_data-dbname.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>MODULE chk_0200_data ON CHAIN-INPUT.</LINE>
+       <LINE>    MODULE chk_0200_data ON CHAIN-INPUT.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>ENDCHAIN.</LINE>
+       <LINE>  ENDCHAIN.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW/>
       <RPY_DYFLOW>
-       <LINE>MODULE usr_check_consistency_0200.</LINE>
+       <LINE>  MODULE usr_check_consistency_0200.</LINE>
       </RPY_DYFLOW>
      </FLOW_LOGIC>
-     <SPACES>
-      <item>0</item>
-      <item>0</item>
-      <item>0</item>
-      <item>0</item>
-      <item>2</item>
-      <item>2</item>
-      <item>4</item>
-      <item>4</item>
-      <item>4</item>
-      <item>4</item>
-      <item>2</item>
-      <item>0</item>
-      <item>2</item>
-     </SPACES>
     </item>
     <item>
      <HEADER>
@@ -485,50 +468,34 @@
        <LINE>PROCESS AFTER INPUT.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>MODULE wz_user_command_wizard.</LINE>
+       <LINE>  MODULE wz_user_command_wizard.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>CHAIN.</LINE>
+       <LINE>  CHAIN.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>FIELD gs_codegen_data-function_group.</LINE>
+       <LINE>    FIELD gs_codegen_data-function_group.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>FIELD gs_codegen_data-function_s.</LINE>
+       <LINE>    FIELD gs_codegen_data-function_s.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>FIELD gs_codegen_data-function_t.</LINE>
+       <LINE>    FIELD gs_codegen_data-function_t.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>FIELD gs_codegen_data-table_type.</LINE>
+       <LINE>    FIELD gs_codegen_data-table_type.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>MODULE chk_0300_data ON CHAIN-INPUT.</LINE>
+       <LINE>    MODULE chk_0300_data ON CHAIN-INPUT.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>ENDCHAIN.</LINE>
+       <LINE>  ENDCHAIN.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW/>
       <RPY_DYFLOW>
-       <LINE>MODULE usr_check_consistency_0300.</LINE>
+       <LINE>  MODULE usr_check_consistency_0300.</LINE>
       </RPY_DYFLOW>
      </FLOW_LOGIC>
-     <SPACES>
-      <item>0</item>
-      <item>0</item>
-      <item>0</item>
-      <item>0</item>
-      <item>2</item>
-      <item>2</item>
-      <item>4</item>
-      <item>4</item>
-      <item>4</item>
-      <item>4</item>
-      <item>4</item>
-      <item>2</item>
-      <item>0</item>
-      <item>2</item>
-     </SPACES>
     </item>
    </DYNPROS>
   </asx:values>
