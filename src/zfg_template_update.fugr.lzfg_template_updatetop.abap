@@ -11,6 +11,7 @@ CONSTANTS:
     insert TYPE cdchngind VALUE 'I',
     update TYPE cdchngind VALUE 'U',
     delete TYPE cdchngind VALUE 'D',
+    modify TYPE cdchngind VALUE 'M',
   END   OF gc_chngind.
 
 *====================================================================
@@ -18,4 +19,5 @@ DATA:
 *====================================================================
   gt_buffer_i TYPE STANDARD TABLE OF sflight,
   gt_buffer_u TYPE STANDARD TABLE OF sflight,
-  gt_buffer_d TYPE STANDARD TABLE OF sflight.
+  gt_buffer_d TYPE STANDARD TABLE OF sflight,
+  gt_buffer_m TYPE STANDARD TABLE OF sflight.

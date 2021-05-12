@@ -14,14 +14,21 @@ FORM buffer_update .
   ENDIF.
 
   IF NOT gt_buffer_u[] IS INITIAL.
-    UPDATE sflight FROM TABLE gt_buffer_i[].
+    UPDATE sflight FROM TABLE gt_buffer_u[].
     IF NOT sy-subrc IS INITIAL.
       MESSAGE a012(/sapdmc/lsmw) WITH 'SFLIGHT' RAISING db_update_error.
     ENDIF.
   ENDIF.
 
   IF NOT gt_buffer_d[] IS INITIAL.
-    DELETE sflight FROM TABLE gt_buffer_i[].
+    DELETE sflight FROM TABLE gt_buffer_d[].
+    IF NOT sy-subrc IS INITIAL.
+      MESSAGE a013(/sapdmc/lsmw) WITH 'SFLIGHT' RAISING db_update_error.
+    ENDIF.
+  ENDIF.
+
+  IF NOT gt_buffer_m[] IS INITIAL.
+    modify sflight FROM TABLE gt_buffer_m[].
     IF NOT sy-subrc IS INITIAL.
       MESSAGE a013(/sapdmc/lsmw) WITH 'SFLIGHT' RAISING db_update_error.
     ENDIF.
@@ -35,5 +42,6 @@ FORM buffer_clear .
 *=======================================================================
   CLEAR: gt_buffer_i,
          gt_buffer_u,
-         gt_buffer_d.
+         gt_buffer_d,
+         gt_buffer_m.
 ENDFORM.                    " BUFFER_CLEAR

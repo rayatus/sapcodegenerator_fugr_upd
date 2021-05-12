@@ -1,5 +1,5 @@
-FUNCTION Z_FM_SFLIGHT_UPD_T.
-*"--------------------------------------------------------------------
+FUNCTION z_fm_sflight_upd_t.
+*"----------------------------------------------------------------------
 *"*"Update Function Module:
 *"
 *"*"Local Interface:
@@ -8,7 +8,7 @@ FUNCTION Z_FM_SFLIGHT_UPD_T.
 *"  EXCEPTIONS
 *"      DB_UPDATE_ERROR
 *"      INCORRECT_CHANGE_INDICATOR
-*"--------------------------------------------------------------------
+*"----------------------------------------------------------------------
   DATA: ls_buffer     LIKE LINE OF gt_buffer_i.
   FIELD-SYMBOLS: <ls_data> LIKE LINE OF it_data.
 
@@ -18,6 +18,7 @@ FUNCTION Z_FM_SFLIGHT_UPD_T.
       WHEN gc_chngind-insert. INSERT ls_buffer INTO TABLE gt_buffer_i.
       WHEN gc_chngind-update. INSERT ls_buffer INTO TABLE gt_buffer_u.
       WHEN gc_chngind-delete. INSERT ls_buffer INTO TABLE gt_buffer_d.
+      WHEN gc_chngind-modify. INSERT ls_buffer INTO TABLE gt_buffer_m.
       WHEN OTHERS.
         MESSAGE a431(e0) RAISING incorrect_change_indicator.
     ENDCASE.
