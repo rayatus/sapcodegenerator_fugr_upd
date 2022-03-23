@@ -1,3 +1,7 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/rayatus/sapcodegenerator_fugr_upd/blob/master/LICENSE)
+![ABAP 7.40sp08+](https://img.shields.io/badge/ABAP-7.40sp08+-brightgreen)
+[![Code Statistics](https://img.shields.io/badge/CodeStatistics-abaplint-blue)](https://abaplint.app/stats/rayatus/sapcodegenerator_fugr_upd)
+
 # SAPCodeGenerator update Function group
 Code generator which creates a function group for creating, updating and deleting entries in a given database table so that this function modules could be executed IN UPDATE TASK.
 
